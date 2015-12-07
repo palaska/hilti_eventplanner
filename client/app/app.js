@@ -52,7 +52,7 @@ angular.module('hiltiEventplannerApp', [
         Auth.isLoggedIn(function(loggedIn) {
           if (!loggedIn) {
             event.preventDefault();
-            $location.path('/login');
+            $location.path('/');
           }
         });
       }

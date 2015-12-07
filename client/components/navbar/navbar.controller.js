@@ -1,8 +1,9 @@
 'use strict';
 
 angular.module('hiltiEventplannerApp')
-  .controller('NavbarCtrl', function ($scope, $location) {
+  .controller('NavbarCtrl', function ($scope, $location, Auth) {
 
+    $scope.isAdmin = Auth.isAdmin;
 
     $scope.menu = [
     {
