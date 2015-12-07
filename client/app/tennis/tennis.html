@@ -1,0 +1,25 @@
+<navbar></navbar>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <h1 class="page-header">Masa Tenisi</h1>
+      <ul class="nav nav-tabs nav-stacked col-md-4 col-lg-4 col-sm-6" ng-repeat="thing in tennis.awesomeThings">
+        <li><a>{{thing.name}}<button ng-show="isAdmin()" type="button" class="close" ng-click="tennis.deleteThing(thing)">&times;</button></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <form class="thing-form">
+    <label>Doluluk oranı: {{tennis.awesomeThings.length}} / 16</label>
+    <p class="input-group">
+      <input type="text" class="form-control" placeholder="İsminizi giriniz." ng-model="tennis.newThing">
+      <span class="input-group-btn">
+        <button type="submit" class="btn btn-primary" ng-click="tennis.addThing()">Ekle</button>
+      </span>
+    </p>
+  </form>
+</div>
+
+<footer></footer>
