@@ -33,6 +33,14 @@ angular.module('hiltiEventplannerApp')
     {
       'title': 'Bowling',
       'link': '/bowling',
+    },
+    {
+      'title': 'Boccia',
+      'link': '/boccia',
+    },
+    {
+      'title': 'Mini Golf',
+      'link': '/minigolf',
     }
     ];
 

@@ -18,6 +18,8 @@ function onConnect(socket) {
   });
 
   // Insert sockets below
+  require('../api/minigolf/minigolf.socket').register(socket);
+  require('../api/boccia/boccia.socket').register(socket);
   require('../api/bowling/bowling.socket').register(socket);
   require('../api/tennis/tennis.socket').register(socket);
   require('../api/billard/billard.socket').register(socket);

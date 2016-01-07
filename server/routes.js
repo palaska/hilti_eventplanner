@@ -10,6 +10,8 @@ import path from 'path';
 module.exports = function(app) {
 
   // Insert routes below
+  app.use('/api/minigolfs', require('./api/minigolf'));
+  app.use('/api/boccias', require('./api/boccia'));
   app.use('/api/bowlings', require('./api/bowling'));
   app.use('/api/tenniss', require('./api/tennis'));
   app.use('/api/billards', require('./api/billard'));
